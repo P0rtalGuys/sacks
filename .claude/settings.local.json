@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 /Users/toy/.claire/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/search.py \"fintech personal finance budget\" --domain color)",
+      "Bash(python3 /Users/toy/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/search.py \"fintech personal finance budget\" --domain color)",
+      "Bash(npx tsc *)",
+      "Read(//Users/toy/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python3 scripts/search.py \"personal finance budget tracker fun professional playful modern\" --design-system -p \"Sack\" -f markdown)",
+      "Bash(python3 scripts/search.py \"playful modern clean fintech\" --domain style -n 4)",
+      "Bash(npm install *)",
+      "Bash(node *)",
+      "Skill(impeccable)",
+      "Bash(npm run *)",
+      "Bash(python3 scripts/search.py \"personal finance tracker subscriptions budgets expenses playful calm minimal desktop\" --design-system -p \"Sack\" -f markdown)",
+      "Bash(python3 scripts/search.py \"fintech personal finance calm modern\" --domain color -n 3)",
+      "Bash(python3 scripts/search.py \"playful modern sans-serif friendly\" --domain typography -n 3)",
+      "mcp__plugin_ecc_chrome-devtools__list_pages",
+      "Bash(npm uninstall *)",
+      "Bash(electron .)",
+      "Bash(./node_modules/.bin/electron .)",
+      "Bash(npx electron *)",
+      "Bash(git -C /Users/toy/Downloads/app status)",
+      "Bash(git -C /Users/toy/Downloads/app diff --cached)",
+      "Bash(git *)"
+    ]
+  }
+}

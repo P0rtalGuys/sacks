@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-18T00:00:00Z",
+  "title": "Design System: Sack",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Deep Conviction Indigo",
+        "canonical": "oklch(0.56 0.23 285)",
+        "tonalRamp": [
+          "oklch(0.15 0.18 285)",
+          "oklch(0.22 0.20 285)",
+          "oklch(0.30 0.22 285)",
+          "oklch(0.40 0.23 285)",
+          "oklch(0.56 0.23 285)",
+          "oklch(0.65 0.20 285)",
+          "oklch(0.75 0.16 285)",
+          "oklch(0.90 0.08 285)"
+        ]
+      },
+      "primary-light": {
+        "role": "primary",
+        "displayName": "Deep Conviction Indigo (dark mode)",
+        "canonical": "oklch(0.69 0.21 285)",
+        "tonalRamp": [
+          "oklch(0.15 0.18 285)",
+          "oklch(0.22 0.20 285)",
+          "oklch(0.30 0.22 285)",
+          "oklch(0.40 0.23 285)",
+          "oklch(0.56 0.23 285)",
+          "oklch(0.69 0.21 285)",
+          "oklch(0.80 0.16 285)",
+          "oklch(0.92 0.07 285)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Fresh Emerald",
+        "canonical": "oklch(0.68 0.18 163)",
+        "tonalRamp": [
+          "oklch(0.15 0.14 163)",
+          "oklch(0.25 0.16 163)",
+          "oklch(0.35 0.18 163)",
+          "oklch(0.50 0.18 163)",
+          "oklch(0.68 0.18 163)",
+          "oklch(0.76 0.15 163)",
+          "oklch(0.85 0.10 163)",
+          "oklch(0.93 0.05 163)"
+        ]
+      },
+      "sidebar": {
+        "role": "tertiary",
+        "displayName": "Deep Indigo Sidebar",
+        "canonical": "oklch(0.2 0.075 285)",
+        "tonalRamp": [
+          "oklch(0.08 0.07 285)",
+          "oklch(0.12 0.075 285)",
+          "oklch(0.16 0.075 285)",
+          "oklch(0.20 0.075 285)",
+          "oklch(0.27 0.065 285)",
+          "oklch(0.38 0.05 285)",
+          "oklch(0.55 0.035 285)",
+          "oklch(0.72 0.02 285)"
+        ]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Ghost White",
+        "canonical": "oklch(0.985 0.003 260)",
+        "tonalRamp": [
+          "oklch(0.20 0.01 260)",
+          "oklch(0.35 0.008 260)",
+          "oklch(0.50 0.006 260)",
+          "oklch(0.65 0.005 260)",
+          "oklch(0.78 0.004 260)",
+          "oklch(0.88 0.003 260)",
+          "oklch(0.94 0.003 260)",
+          "oklch(0.985 0.003 260)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(0.15 0.015 260)"
+      },
+      "muted-foreground": {
+        "role": "neutral",
+        "displayName": "Dust",
+        "canonical": "oklch(0.52 0.015 260)"
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Cloud",
+        "canonical": "oklch(0.94 0.015 285)"
+      },
+      "destructive": {
+        "role": "neutral",
+        "displayName": "Danger",
+        "canonical": "oklch(0.6 0.24 25)",
+        "tonalRamp": [
+          "oklch(0.15 0.18 25)",
+          "oklch(0.25 0.20 25)",
+          "oklch(0.35 0.22 25)",
+          "oklch(0.45 0.23 25)",
+          "oklch(0.60 0.24 25)",
+          "oklch(0.70 0.20 25)",
+          "oklch(0.80 0.15 25)",
+          "oklch(0.92 0.07 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page titles and modal headings only." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings, card titles, stat labels." },
+      "title": { "displayName": "Title", "purpose": "Subsection headers, dialog headings, sidebar brand mark." },
+      "body": { "displayName": "Body", "purpose": "All running text, descriptions, empty state copy. Cap at 65-75ch." },
+      "label": { "displayName": "Label", "purpose": "Button text, nav labels, field labels, metadata." }
+    },
+    "shadows": [
+      {
+        "name": "card-ambient",
+        "value": "0 1px 3px oklch(0 0 0 / 0.08)",
+        "valueDark": "0 1px 3px oklch(0 0 0 / 0.30)",
+        "purpose": "Diffuse, full-surround grounding for card surfaces. Grounds without lifting."
+      },
+      {
+        "name": "button-glow",
+        "value": "0 4px 12px oklch(0.56 0.23 285 / 0.30)",
+        "purpose": "Tinted indigo glow under primary buttons at rest. Communicates pressability."
+      }
+    ],
+    "motion": [
+      {
+        "name": "press-scale",
+        "value": "transform: scale(0.95); transition: all 150ms;",
+        "purpose": "Applied to all interactive surfaces via active:scale-95. Kinaesthetic press feedback."
+      },
+      {
+        "name": "state-transition",
+        "value": "transition: all 150ms;",
+        "purpose": "Default state change duration for hover, focus, and active states."
+      },
+      {
+        "name": "accordion",
+        "value": "0.2s ease-out",
+        "purpose": "Form section accordion expand/collapse."
+      }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "768px", "purpose": "Desktop sidebar visible; mobile bottom nav hides." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single primary action per screen. Gradient indigo to violet with tactile press spring.",
+      "html": "<button class=\"ds-btn-primary\">Add Subscription</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 20px; height: 40px; background: linear-gradient(135deg, oklch(0.56 0.23 285), oklch(0.55 0.22 305)); color: #ffffff; font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 600; border: none; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 12px oklch(0.56 0.23 285 / 0.30); transition: all 150ms; white-space: nowrap; } .ds-btn-primary:hover { opacity: 0.9; } .ds-btn-primary:active { transform: scale(0.95); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(0.56 0.23 285); outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action. White background, Hairline border, Cloud hover.",
+      "html": "<button class=\"ds-btn-outline\">Export</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 20px; height: 40px; background: oklch(0.985 0.003 260); color: oklch(0.15 0.015 260); font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 600; border: 1px solid oklch(0.92 0.008 260); border-radius: 20px; cursor: pointer; transition: all 150ms; } .ds-btn-outline:hover { background: oklch(0.94 0.015 285); color: oklch(0.28 0.05 285); } .ds-btn-outline:active { transform: scale(0.95); } .ds-btn-outline:focus-visible { outline: 2px solid oklch(0.56 0.23 285); outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Tertiary action. Transparent background, Cloud hover.",
+      "html": "<button class=\"ds-btn-ghost\">Cancel</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 20px; height: 40px; background: transparent; color: oklch(0.15 0.015 260); font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 600; border: none; border-radius: 20px; cursor: pointer; transition: all 150ms; } .ds-btn-ghost:hover { background: oklch(0.94 0.015 285); color: oklch(0.28 0.05 285); } .ds-btn-ghost:active { transform: scale(0.95); } .ds-btn-ghost:focus-visible { outline: 2px solid oklch(0.56 0.23 285); outline-offset: 2px; }"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Dashboard summary card with 3px indigo to emerald gradient top bar.",
+      "html": "<div class=\"ds-stat-card\"><div class=\"ds-stat-label\">Monthly Spending</div><div class=\"ds-stat-value\">$1,240</div><div class=\"ds-stat-sub\">June 2026</div></div>",
+      "css": ".ds-stat-card { position: relative; background: #ffffff; border-radius: 24px; border: 1px solid oklch(0.9 0.01 260); box-shadow: 0 1px 3px oklch(0 0 0 / 0.08); padding: 24px; overflow: hidden; } .ds-stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, oklch(0.56 0.23 285), oklch(0.68 0.18 163)); } .ds-stat-label { font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 600; color: oklch(0.52 0.015 260); } .ds-stat-value { font-family: 'Fredoka', system-ui, sans-serif; font-weight: 600; font-size: 28px; color: oklch(0.15 0.015 260); margin-top: 4px; } .ds-stat-sub { font-family: 'Nunito', system-ui, sans-serif; font-size: 13px; color: oklch(0.52 0.015 260); margin-top: 2px; }"
+    },
+    {
+      "name": "Plain Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Standard content card. No gradient bar. Used for lists, forms, and content areas.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-header\"><div class=\"ds-card-title\">Subscriptions</div><div class=\"ds-card-desc\">5 active services</div></div><div class=\"ds-card-body\">$89.99 / month</div></div>",
+      "css": ".ds-card { background: #ffffff; border-radius: 24px; border: 1px solid oklch(0.9 0.01 260); box-shadow: 0 1px 3px oklch(0 0 0 / 0.08); overflow: hidden; } .ds-card-header { padding: 24px 24px 0; } .ds-card-title { font-family: 'Fredoka', system-ui, sans-serif; font-weight: 600; font-size: 18px; color: oklch(0.15 0.015 260); } .ds-card-desc { font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; color: oklch(0.52 0.015 260); margin-top: 4px; } .ds-card-body { padding: 24px; font-family: 'Nunito', system-ui, sans-serif; color: oklch(0.15 0.015 260); font-size: 16px; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "description": "Cloud-grey filled input with indigo ring on focus. Label always visible above.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-amount\">Amount</label><input class=\"ds-input\" id=\"ds-amount\" type=\"text\" placeholder=\"0.00\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; } .ds-label { font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 600; color: oklch(0.15 0.015 260); } .ds-input { height: 40px; padding: 8px 12px; background: oklch(0.92 0.008 260); border: 1px solid oklch(0.9 0.01 260); border-radius: 14px; font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; color: oklch(0.15 0.015 260); transition: all 150ms; outline: none; box-sizing: border-box; } .ds-input:focus { box-shadow: 0 0 0 2px oklch(0.56 0.23 285); border-color: transparent; } .ds-input::placeholder { color: oklch(0.62 0.015 260); }"
+    },
+    {
+      "name": "Nav Item (Active)",
+      "kind": "nav",
+      "description": "Active sidebar navigation item. Gradient fill matches primary button.",
+      "html": "<a class=\"ds-nav-item ds-nav-active\" href=\"#\"><svg class=\"ds-nav-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"/></svg>Dashboard</a>",
+      "css": ".ds-nav-item { display: inline-flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 20px; font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 500; color: oklch(0.93 0.01 260); text-decoration: none; transition: all 150ms; background: transparent; } .ds-nav-item:hover { background: oklch(0.27 0.065 285 / 0.5); } .ds-nav-active { background: linear-gradient(135deg, oklch(0.56 0.23 285), oklch(0.55 0.22 305)); color: #ffffff; box-shadow: 0 4px 8px oklch(0.56 0.23 285 / 0.20); } .ds-nav-icon { width: 16px; height: 16px; flex-shrink: 0; }"
+    },
+    {
+      "name": "Avatar Initials",
+      "kind": "custom",
+      "description": "Deterministic colour initials avatar. Same service name always produces the same colour.",
+      "html": "<div class=\"ds-avatar\" style=\"background-color: #8b5cf6;\">SP</div>",
+      "css": ".ds-avatar { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #ffffff; font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; font-weight: 700; flex-shrink: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Friendly Ledger",
+    "overview": "Sack is built for the moment a person opens their laptop at the kitchen table and decides to actually understand their money. It is not a tool for financial anxiety — it is the opposite: a place where numbers feel manageable, even satisfying to look at. Deep indigo gives weight and structure, while Fredoka's rounded geometry and emerald moments of confirmation make the whole thing feel like something you want to open.\n\nThis is not a spreadsheet. It is not a fintech product. The Friendly Ledger metaphor names what the system actually is: a ledger — precise, honest, structured — but one that belongs to a person, not a corporation. The indigo primary is a commitment (Deep Conviction), the emerald accent is a reward signal, and everything in between is quiet white space that gives the numbers room to breathe.\n\nThe system explicitly rejects the visual language of crypto dashboards and spreadsheet clones: no dark neon, no gradient-heavy hero sections, no dense row-and-column layouts.",
+    "keyCharacteristics": [
+      "Deep indigo primary anchors trust and structure across all surfaces",
+      "Rounded display type (Fredoka) brings personality without noise",
+      "Cards topped with a 3px indigo to emerald gradient bar on high-value surfaces only",
+      "12-24px radius scale — nothing sharp, nothing excessive",
+      "Press-scale buttons (active:scale-95) for tactile, kinaesthetic feedback",
+      "Near-white tinted background with intentional pure-white card surfaces",
+      "Sidebar lives in its own deep-indigo world, cleanly separated from content"
+    ],
+    "rules": [
+      {
+        "name": "The Emerald Economy Rule",
+        "body": "Fresh Emerald appears in exactly two contexts: the right half of the gradient card-border accent bar, and success/confirmation states. It is not a background, a button colour, or a decorative tint anywhere else.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Voice Rule",
+        "body": "Deep Conviction Indigo and the sidebar's Deep Indigo are the same hue family (285°), different lightness. The system runs on one hue. No blue, no purple, no teal introduced as additional primaries.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fredoka Ceiling Rule",
+        "body": "Fredoka is for h1-h6 only. Body copy, labels, and button text use Nunito. Mixing the display font into body-weight text makes the system feel like a children's product.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Balance Rule",
+        "body": "Nunito 600 is the label weight. Nunito 400 is body. No 700 or 800 weight is in use.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Shadows appear only on cards (ambient grounding) and primary buttons (pressability signal). No surface gains a shadow from hover or elevation alone.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use Deep Conviction Indigo for all primary CTAs, active navigation, chart series 1, and focus rings.",
+      "Do use Fresh Emerald exclusively for success states and the right half of the gradient card-border.",
+      "Do use Fredoka at 600 weight for all h1-h6; use Nunito for all labels, body, and button text.",
+      "Do keep card shadows diffuse and low-opacity (8% black light / 30% dark).",
+      "Do apply the gradient card-border to dashboard stat cards and high-priority summary surfaces only.",
+      "Do include both icon and text label on all navigation items.",
+      "Do add active:scale-95 to all clickable surfaces to maintain tactile consistency.",
+      "Do target WCAG AAA (7:1) for body text; WCAG AA (4.5:1) minimum for all other text.",
+      "Do include prefers-reduced-motion alternatives for all animations.",
+      "Do pair all colour-only status signals with a text label or icon."
+    ],
+    "donts": [
+      "Don't use spreadsheet-style dense tables or row-heavy layouts.",
+      "Don't use crypto or fintech visual language: no dark neon, no rocket emojis, no growth-chart hero metrics.",
+      "Don't add more than one primary CTA per screen.",
+      "Don't apply shadows to surfaces beyond cards and primary buttons.",
+      "Don't use Fresh Emerald as a background tint, button colour, or general decorative accent.",
+      "Don't use red and green alone to convey financial status — always pair with icon or text.",
+      "Don't use border-left or border-right coloured stripes as card accents.",
+      "Don't use placeholder text as the only label for a form field.",
+      "Don't apply Fredoka to body copy, descriptions, or text below title-level.",
+      "Don't introduce a third colour family — Deep Conviction Indigo and Fresh Emerald are the two intentional chromatic voices."
+    ]
+  }
+}
